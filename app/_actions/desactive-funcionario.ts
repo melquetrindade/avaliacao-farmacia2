@@ -56,5 +56,6 @@ export async function setFuncionarioAtivo(
   }
 
   revalidatePath("/admin/funcionarios");
+  revalidatePath("/");
   return { error: null, success: true };
 }

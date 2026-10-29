@@ -2,6 +2,8 @@ import Image from "next/image";
 import { db } from "./_lib/prisma";
 import { PesquisaAtendimento } from "./pesquisa-atendimento";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const funcionarios = await db.colaborador.findMany({
     where: { ativo: true },

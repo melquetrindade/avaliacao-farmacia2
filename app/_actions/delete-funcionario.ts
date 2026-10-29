@@ -168,5 +168,6 @@ export async function deleteFuncionario(
   }
 
   revalidatePath("/admin/funcionarios");
+  revalidatePath("/");
   return { error: null, success: true, warning };
 }

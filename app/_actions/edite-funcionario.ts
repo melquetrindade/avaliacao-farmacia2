@@ -192,6 +192,7 @@ export async function editarFuncionario(
     }
 
     revalidatePath("/admin/funcionarios");
+    revalidatePath("/");
     return { error: null, success: true };
   }
 
@@ -312,5 +313,6 @@ export async function editarFuncionario(
   }
 
   revalidatePath("/admin/funcionarios");
+  revalidatePath("/");
   return { error: null, success: true };
 }

@@ -164,6 +164,7 @@ export async function createFuncionario(
   }
 
   revalidatePath("/admin/funcionarios");
+  revalidatePath("/");
 
   return { error: null, success: true };
 }
